@@ -8,6 +8,7 @@ h1 {
 
 p {
     font-family: Arial, sans-serif;
+    padding: 0;
 }
 
 nav a {
@@ -36,10 +37,6 @@ aside img {
 main img {
     width: 150px;
     height: auto;
-}
-
-p {
-    padding: 0;
 }
 
 footer {
