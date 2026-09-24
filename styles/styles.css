@@ -12,17 +12,33 @@ h1 {
     font-family: Georgia, serif;
     color: #4a90d9;
     padding: 1rem;
+    border-bottom: 2px solid #4a90d9;
 }
 
 p {
     font-family: Arial, sans-serif;
     padding: 0;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
 }
 
 /* Navigation */
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 header {
     background-color: #4a90d9;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
@@ -38,12 +54,24 @@ nav a:hover {
     background-color: #3a7ac0;
 }
 
+/* Grid layout */
+
+.grid {
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    grid-row: 1/2;
     padding: 0 1rem;
 }
 
 aside {
+    grid-column: 1/2;
+    grid-row: 1/2;
     width: 20rem;
     text-align: center;
     position: relative;
@@ -61,13 +89,6 @@ main img {
     margin: 0 0 1rem 1rem;
     border: 1px solid #ccc;
     padding: 3px;
-}
-
-p {
-    font-family: Arial, sans-serif;
-    padding: 0;
-    line-height: 1.6;
-    margin-bottom: 0.75rem;
 }
 
 aside h2 {
@@ -89,7 +110,7 @@ footer {
 
 .box {
     margin: 1rem;
-    border: 3px solid rgb(0 0 / 10%);
+    border: 3px solid rgb(0 0 0 / 10%);
     padding: 1rem;
     background-color: #ddd;
     color: #000;
