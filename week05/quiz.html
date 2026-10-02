@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML &amp; CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <main class="quiz-page">
+        <h1>How well do you know HTML &amp; CSS?</h1>
+        <p class="quiz-intro">
+            Answer these four questions to check your understanding of the basics.
+        </p>
+
+        <form class="quiz-form" action="#" method="get">
+
+            <div class="quiz-question">
+                <label for="q1">1. Which HTML element creates a hyperlink? Type just the tag
+                    name.</label>
+                <input type="text" name="q1" id="q1" placeholder="e.g. p" required>
+            </div>
+
+            <div class="quiz-question">
+                <label for="q2">
+                    2. In your own words, explain the difference between an
+                    <code>id</code> attribute and a <code>class</code> attribute.
+                </label>
+                <textarea name="q2" id="q2" rows="4" required></textarea>
+            </div>
+
+            <div class="quiz-question">
+                <label for="q3">
+                    3. Which CSS property controls the space between an element's
+                    border and its content?
+                </label>
+                <select name="q3" id="q3" required>
+                    <option value="" selected disabled>Choose one ...</option>
+                    <option value="padding">padding</option>
+                    <option value="margin">margin</option>
+                    <option value="gap">gap</option>
+                    <option value="border-spacing">border-spacing</option>
+                </select>
+            </div>
+
+            <div class="quiz-question">
+                <label for="q4">
+                    4. How many heading levels does HTML provide, from
+                    <code>h1</code> through <code>h6</code>?
+                </label>
+                <input type="number" name="q4" id="q4" min="1" max="10" required>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+
+        </form>
+    </main>
+</body>
+
+</html>
