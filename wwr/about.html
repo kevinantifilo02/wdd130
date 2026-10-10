@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | River Rush Rafting</title>
+    <title>Contact Us | River Rush Rafting</title>
     <meta name="description"
-      content="Learn about River Rush Rafting's mission, history, and passion for white water adventure.">
+      content="Get in touch with River Rush Rafting. Find our location, contact details, and send us a message.">
     <meta name="author" content="Kevin Antifilo">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -19,60 +19,95 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/hero.jpg" alt="Rafters navigating white water rapids">
-            <h1>River Rush Rafting</h1>
-            <article>
-                <img src="images/happy-client.jpg" alt="Happy client after a rafting trip">
-                <p>
-                    At River Rush Rafting, our mission is simple: turn first-time nerves into
-                    lifelong memories. Every trip we guide is built on respect for the river,
-                    genuine care for our guests, and a passion for adventure that never gets old.
-                </p>
-            </article>
-        </div>
-
         <section>
-            <h2>History</h2>
+            <h1>Contact Us</h1>
             <p>
-                River Rush Rafting was founded over a decade ago by a small crew of river
-                guides who couldn't imagine doing anything else for a living. What started
-                as weekend trips for friends grew into a trusted outfitter known for expert
-                guides, well-maintained gear, and routes suited for everyone from nervous
-                beginners to thrill-seeking veterans.
+                Have a question about an upcoming trip, or just want to say hello? Reach out
+                using the information below, or send us a message with the form.
             </p>
         </section>
 
+        <section class="contact-info">
+            <div class="info-text">
+                <h2>Find Us</h2>
+                <p><strong>Address:</strong> 123 River Rd, Idaho Falls, ID 83401</p>
+                <p><strong>Phone:</strong> (208) 555-0147</p>
+                <p><strong>Email:</strong> info@riverrushrafting.com</p>
+            </div>
+            <div class="map-container">
+                <iframe title="Map showing the River Rush Rafting location"
+                  src="https://www.google.com/maps?q=123+River+Rd,+Idaho+Falls,+ID&output=embed"
+                  width="400" height="300" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
         <section>
-            <h2>Adventure Awaits You!</h2>
-            <div class="adventures">
+            <h2>Meet Our Team</h2>
+            <div class="team">
                 <figure>
-                    <img src="images/adventure1.jpg" alt="Rafters through a narrow rocky gorge">
-                    <figcaption>Los Dientes del Diablo</figcaption>
+                    <img src="images/employee1.jpg" alt="Photo of Maria Lopez">
+                    <figcaption>Maria Lopez — Head Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/adventure2.jpg" alt="Raft crashing through big rapids">
-                    <figcaption>Big Mallard</figcaption>
+                    <img src="images/employee2.jpg" alt="Photo of James Carter">
+                    <figcaption>James Carter — Trip Coordinator</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/adventure3.jpg" alt="Family enjoying a calm rafting trip">
-                    <figcaption>Half Day Adventure</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/adventure4.jpg" alt="Rafters at sunset on the river">
-                    <figcaption>Sunset Float Trip</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/adventure5.jpg" alt="Full day wilderness rafting expedition">
-                    <figcaption>Full Day Wilderness</figcaption>
+                    <img src="images/employee3.jpg" alt="Photo of Sarah Kim">
+                    <figcaption>Sarah Kim — Customer Service Manager</figcaption>
                 </figure>
             </div>
+        </section>
+
+        <section>
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <fieldset>
+                    <legend>Purpose of your message:</legend>
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" checked>
+                        General Inquiry
+                    </label>
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <div class="form-row">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-row checkbox-row">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
 
