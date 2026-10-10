@@ -259,3 +259,164 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: var(--accent1-color);
 }
+
+/* ---------- Home page ---------- */
+.hero .hero-cta {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 4px;
+}
+
+.hero .hero-cta:hover,
+.hero .hero-cta:focus {
+    background-color: var(--accent2-color);
+}
+
+.hero .hero-intro {
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    right: 20px;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(255 255 255 / 85%);
+    border-radius: 8px;
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 16px;
+}
+
+.highlights article {
+    margin: 0;
+    padding: 0;
+}
+
+.highlights article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+.highlights article h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin: 8px 0 4px;
+}
+
+.highlights article p {
+    margin: 0;
+    padding: 0;
+}
+
+.highlights .wide {
+    grid-column: 1 / -1;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.newsletter form {
+    margin: 0;
+}
+
+/* ---------- Trips page ---------- */
+.trips-intro {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    align-items: center;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: var(--accent1-color);
+}
+
+.trip {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 16px;
+    align-items: start;
+    margin: 16px;
+    padding: 0;
+}
+
+.trip img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+.trip h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 4px;
+}
+
+.trip p {
+    margin: 0 0 8px;
+    padding: 0;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+th,
+td {
+    border: 1px solid var(--accent1-color);
+    padding: 8px;
+    text-align: left;
+}
+
+thead th {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+nav a[aria-current="page"] {
+    font-weight: bold;
+    text-decoration: underline;
+}
